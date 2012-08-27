@@ -23,6 +23,7 @@ macosx:
 test_macosx:
 	$(MAKE) test_posix "SOCC=MACOSX_DEPLOYMENT_TARGET=10.3 $(CC) -dynamiclib -single_module -undefined dynamic_lookup $(SOCFLAGS)"
 
+
 posix: $(MODSO) test_cdecl.so
 
 clean:
